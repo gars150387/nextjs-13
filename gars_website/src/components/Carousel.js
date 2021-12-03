@@ -1,13 +1,13 @@
 import React from "react"
 import {Carousel} from "react-bootstrap"
 
-export const CarouselTemplate =()=>{
+export const CarouselMainPage =()=>{
     return(
         <Carousel fade>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -18,7 +18,7 @@ export const CarouselTemplate =()=>{
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src="https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg"
       alt="Second slide"
     />
 
@@ -30,7 +30,7 @@ export const CarouselTemplate =()=>{
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png"
       alt="Third slide"
     />
 
