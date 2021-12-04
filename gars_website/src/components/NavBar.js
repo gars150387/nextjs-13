@@ -37,8 +37,8 @@ export const NavBarMain = () => {
             <Link to="/resume">
               <Nav.Link href="/resume">Resume</Nav.Link>
             </Link>
-            <Link to="/contactMe">            
-            <Nav.Link eventKey={2} href="/contactMe">Contact</Nav.Link>
+            <Link to="/contact">            
+            <Nav.Link eventKey={2} href="/contact">Contact</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>

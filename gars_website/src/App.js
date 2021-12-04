@@ -6,7 +6,7 @@ import { Home } from './pages/Home';
 import { AboutMe } from './pages/AboutMe';
 import { Certifications } from './pages/Certifications';
 import { Resume } from './pages/Resume';
-import { ContactMe } from './pages/ContactMe';
+import { Contact } from './pages/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
         <Route exact path="/certifications" >
           <Certifications />
         </Route>
-        <Route exact path="/contactMe" >
-          <ContactMe />
+        <Route exact path="/contact" >
+          <Contact/>
         </Route>
         <Route exact path="/resume" >
           <Resume />
