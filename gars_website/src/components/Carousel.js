@@ -8,7 +8,7 @@ export const CarouselMainPage =()=>{
   <Carousel.Item>
     <img
       className="d-block w-100 h-100"
-      src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png"
+      src="https://repository-images.githubusercontent.com/126577260/3c924980-61ac-11e9-8e4e-6e50e0cec366"
       alt="First slide"
     />
     {/* <Carousel.Caption>
@@ -31,7 +31,7 @@ export const CarouselMainPage =()=>{
   <Carousel.Item>
     <img
       className="d-block w-100 h-100"
-      src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png"
+      src="https://itechzo.com/wp-content/uploads/2019/11/bootstrap.png"
       alt="Third slide"
     />
 
