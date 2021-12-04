@@ -1,31 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { CarouselMainPage} from './components/Carousel';
-import {NavBarMain} from "./components/NavBar";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { NavBarMain } from "./components/NavBar";
+import { BrowserRouter, Routes } from 'react-router-dom'
+import { Home } from './pages/Home';
+import { AboutMe } from './pages/AboutMe';
+import { Certifications } from './pages/Certifications';
+import { Resume } from './pages/Resume';
+import { ContactMe } from './pages/ContactMe';
 
 function App() {
   return (
-    <Router>
-          <div className="App">
-      <Switch>
-      <NavBarMain />
-      <Route to="/">
-      <CarouselMainPage />
-      </Route>
-      {/* <Route to="/">
-      <CarouselMainPage />
-      </Route>
-      <Route to="/">
-      <CarouselMainPage />
-      </Route>
-      <Route to="/">
-      <CarouselMainPage />
-      </Route> */}
-      </Switch>
-    </div>
-    </Router>
+    <BrowserRouter>
+      <div className="App">
+        <NavBarMain />
+      </div>
+      <Routes path="/" component={Home} />
+      <Routes path="/aboutMe" component={AboutMe} />
+      <Routes path="/certifications" component={Certifications} />
+      <Routes path="/contactMe" component={ContactMe} />
+      <Routes path="/resume" component={Resume} />
+    </BrowserRouter>
   );
 }
 
