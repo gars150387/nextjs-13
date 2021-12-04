@@ -26,7 +26,7 @@ const ContactForm = () => {
                             <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                                 {/* Row 1 of form */}
                                 <div className='row formRow'>
-                                    <div className='col-6'>
+                                    <div className='col-6 mt-2 mb-2'>
                                         <input
                                             type='text'
                                             name='name'
@@ -42,7 +42,7 @@ const ContactForm = () => {
                                         ></input>
                                         {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                                     </div>
-                                    <div className='col-6'>
+                                    <div className='col-6 mt-2 mb-2'>
                                         <input
                                             type='email'
                                             name='email'
@@ -60,7 +60,7 @@ const ContactForm = () => {
                                 </div>
                                 {/* Row 2 of form */}
                                 <div className='row formRow'>
-                                    <div className='col'>
+                                    <div className='col mt-2 mb-2'>
                                         <input
                                             type='text'
                                             name='subject'
@@ -94,7 +94,7 @@ const ContactForm = () => {
                                         {errors.message && <span className='errorMessage'>Please enter a message</span>}
                                     </div>
                                 </div>
-                                <button className='submit-btn' type='submit'>
+                                <button className='submit-btn mt-3' type='submit'>
                                     Submit
                                 </button>
                             </form>
