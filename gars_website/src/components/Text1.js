@@ -9,11 +9,10 @@ export const Text1 = () => {
                 <Col className="col-5">
                     <Card className="mt-2 mb-2" >
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                            {/* <Card.Title>Card Title</Card.Title> */}
+                            {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
+                            <Card.Text className="">
+                                This is my story, I am a professional with 10 years of experience in Management. I got my Bachelor degree in Marketing in the university of Jose Antonio Paez, in Venezuela. There I started my career in Management where I worked as consulter. Also, I started my enterpreuner skill importing and trading goods from United States to Venezuela.
                             </Card.Text>
                         </Card.Body>
                     </Card>
