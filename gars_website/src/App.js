@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavBarMain } from "./components/NavBar";
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Home } from './pages/Home';
 import { AboutMe } from './pages/AboutMe';
 import { Certifications } from './pages/Certifications';
@@ -10,21 +10,39 @@ import { ContactMe } from './pages/ContactMe';
 import { Footer } from './components/Footer';
 
 function App() {
-  
+
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <NavBarMain />
       </div>
-      <Routes>
-      <Route path="/" element={Home} />
-      <Route path="/aboutMe" element={AboutMe} />
-      <Route path="/certifications" element={Certifications} />
-      <Route path="/contactMe" element={ContactMe} />
-      <Route path="/resume" element={Resume} />
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+      <Switch>
+        <Route exact path="/home" >
+          <Home />
+        </Route>
+        <Route exact path="/aboutMe" >
+          <AboutMe />
+        </Route>
+        <Route exact path="/certifications" >
+          <Certifications />
+        </Route>
+        <Route exact path="/contactMe" >
+          <ContactMe />
+        </Route>
+        <Route exact path="/resume" >
+          <Resume />
+        </Route>
+        <Route>
+          404 Page not found.
+        </Route>
+        {/* <Route exact path="/aboutMe" element={AboutMe} />
+        <Route exact path="/certifications" element={Certifications} />
+        <Route exact path="/contactMe" element={ContactMe} />
+        <Route exact path="/resume" element={Resume} /> */}
+      </Switch>
+      <Footer />
+
+    </Router>
   );
 }
 
