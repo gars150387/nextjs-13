@@ -1,17 +1,17 @@
-export const DataCertifications = [
+export const CertificationsData = [
 	{
 		id: "000",
 		title: "Full Stack Web Developer",
 		company: "Miami Dade College in partnered with 4Geeks Academy",
 		href: "https://www.mdc.edu/ce/technology/",
-		img: "FullStackWebDeveloperCertificationMiamiDadeCollege"
+		img: "FullStackWebDeveloperCertificationMiamiDadeCollege.JPG"
 	},
 	{
 		id: "001",
 		title: "Become a React Developer",
 		company: "LinkedIn Learning",
 		href: "https://www.linkedin.com/learning/paths/become-a-react-developer?u=107513458",
-		img: "BecomeAReactDeveloper"
+		img: "BecomeAReactDeveloper.jpg"
 	},
 	{
 		id: "002",
