@@ -1,5 +1,5 @@
 import React from 'react'
-import {CertificationsData} from '../components/CertificationsData'
+import CertificationsData from '../../src/components/CertificationsData'
 import BecomeAReactDeveloper from "../images/BecomeAReactDeveloper.jpg";
 import BuildAGoogleMapAppWithJavascript from "../images/BuildAGoogleMapAppWithJavascript.jpg";
 import FirebaeEssentialTraining from "../images/FirebaeEssentialTraining.jpg";
@@ -22,7 +22,7 @@ export const CertificationShow = () => {
 		<>
                 {CertificationsData.map((item)=>{
                     return (
-                        <img src={item.img} key={item.id}/>
+                        <img src={BecomeAReactDeveloper} key={item.id}/>
                     )
                 })}
 
