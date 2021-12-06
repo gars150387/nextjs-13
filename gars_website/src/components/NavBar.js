@@ -9,11 +9,11 @@ export const NavBarMain = () => {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link to="/home">
-          <Navbar.Brand href="#">G.A.R.S</Navbar.Brand>
+          <Navbar.Brand className="text-start" href="#">G.A.R.S</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="text-end">
             <Link to="/aboutMe">
               <Nav.Link href="/aboutMe">About Me</Nav.Link>
             </Link>

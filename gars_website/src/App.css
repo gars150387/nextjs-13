@@ -55,5 +55,10 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-
+}
+#contactFooter{
+  position: relative;
+  left: 50px;
+  top: 20px;
+  color: white;
 }

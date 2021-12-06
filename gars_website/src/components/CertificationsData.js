@@ -22,14 +22,14 @@ const CertificationsData = [
 		title: "Full Stack Web Developer",
 		company: "Miami Dade College in partnered with 4Geeks Academy",
 		href: "https://www.mdc.edu/ce/technology/",
-		img: "FullStackWebDeveloperCertificationMiamiDadeCollege"
+		img: {FullStackWebDeveloperCertificationMiamiDadeCollege}
 	},
 	{
 		id: "001",
 		title: "Become a React Developer",
 		company: "LinkedIn Learning",
 		href: "https://www.linkedin.com/learning/paths/become-a-react-developer?u=107513458",
-		img: "BecomeAReactDeveloper"
+		img: {BecomeAReactDeveloper}
 	},
 	{
 		id: "002",
