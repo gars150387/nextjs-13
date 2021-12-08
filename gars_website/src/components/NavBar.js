@@ -6,14 +6,14 @@ import { Link } from "react-router-dom"
 
 export const NavBarMain = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Container>
         <Link to="/home">
-          <Navbar.Brand className="text-start" href="#">G.A.R.S</Navbar.Brand>
+          <Navbar.Brand sticky="top" className="text-start sticky-top" href="#">G.A.R.S</Navbar.Brand>
         </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="sticky-top"/>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="text-end">
+          <Nav className="text-end sticky-top">
             <Link to="/aboutMe">
               <Nav.Link href="/aboutMe">About Me</Nav.Link>
             </Link>
