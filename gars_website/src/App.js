@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBarMain />
+        <NavBarMain sticky="top"/>
       </div>
       <Switch>
         <Route exact path="/home" >

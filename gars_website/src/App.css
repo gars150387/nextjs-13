@@ -62,3 +62,16 @@
   top: 20px;
   color: white;
 }
+#certificationsImage{
+  margin: auto;
+}
+
+#navbar{
+  position: sticky;
+  top: 0%;
+}
+.pdf-container{
+  margin: auto;
+  height: 60%;
+  width: 80%;
+}
