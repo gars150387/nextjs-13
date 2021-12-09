@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Viewer } from '@react-pdf-viewer/core'
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout'
+// import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout'
 import "@react-pdf-viewer/core/lib"
 import '@react-pdf-viewer/default-layout'
 
