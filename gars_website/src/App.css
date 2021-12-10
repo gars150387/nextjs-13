@@ -65,6 +65,7 @@
 #certificationsImage{
   margin: auto;
   border: solid black 1px;
+  padding: 2px;
 }
 
 #navbar{
