@@ -7,12 +7,13 @@ export const ContactUs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+        emailjs.sendForm('gmail', 'template_l0cnn0y', e.target, 'user_7hiY7EgOGmmB04VGtCfcX')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+            e.target.reset()
     };
 
     return (
