@@ -64,6 +64,7 @@
 }
 #certificationsImage{
   margin: auto;
+  border: solid black 1px;
 }
 
 #navbar{
