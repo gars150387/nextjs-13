@@ -17,7 +17,7 @@ export const ResumeFile = () =>{
     return (
         <div className="pdf-container">
             {defaultPdfFile && <> <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-            <Viewer fileUrl={defaultPdfFile}
+            <Viewer className="viewer" fileUrl={defaultPdfFile}
         // plugins={[defaultLayoutPluginInstance]}
         
         />

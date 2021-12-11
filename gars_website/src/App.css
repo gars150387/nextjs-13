@@ -75,5 +75,15 @@
 .pdf-container{
   margin: auto;
   height: 60%;
-  width: 80%;
+  width: 100%;
 }
+#pic1{
+  border-radius: 15px;
+  border: transparent;
+  height: 250px;
+  width: 250px;
+}
+
+/* .btn{
+  left: 200px;
+} */
