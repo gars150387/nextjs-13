@@ -14,9 +14,6 @@ export const NavBarMain = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="sticky-top"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav sticky="top" className="text-end sticky-top">
-            {/* <Link to="/aboutMe">
-              <Nav.Link href="/aboutMe">About Me</Nav.Link>
-            </Link> */}
             <Link to="/certifications">
               <Nav.Link href="/certifications">Certifications</Nav.Link>
             </Link>
