@@ -42,6 +42,11 @@
   color: white;
   align-items:flex-start;
   position: relative;
-  bottom: 25px;
+  /* bottom: 25px; */
   /* left: 50px; */
+}
+.footer-icons{
+  height: 50px;
+  width: 50px;
+  margin: auto;
 }
