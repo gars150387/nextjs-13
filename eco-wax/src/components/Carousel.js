@@ -11,7 +11,7 @@ export const CarouselMain =()=> {
   <Carousel.Item>
     <img
       className="d-block"
-      src={require("../images/pic1.jpeg").default}
+      src='https://media.giphy.com/media/4MVjKN1FqNSZOixYm2/giphy.gif'
       alt="pic1"
     />
     <Carousel.Caption>
@@ -22,7 +22,7 @@ export const CarouselMain =()=> {
   <Carousel.Item>
     <img
       className="d-block"
-      src={require('../images/pic2.jpeg'.default)}
+      src="https://media.giphy.com/media/kGdBpTRRUNOWY24qSR/giphy.gif"
       alt="pic2"
     />
 
@@ -34,7 +34,7 @@ export const CarouselMain =()=> {
   <Carousel.Item>
     <img
       className="d-block"
-      src={require('../images/pic3.jpeg')}
+      src="https://media.giphy.com/media/5UH2PJ8VIEuMqN8V6R/giphy.gif"
       alt="pic3"
     />
 
