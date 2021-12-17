@@ -20,8 +20,8 @@ export const NavbarMain = () =>{
       <Offcanvas.Body>
         <Nav className="justify-content-end flex-grow-1 pe-3">
           <Nav.Link href="#action1">Eco Wax</Nav.Link>
-          <Nav.Link href="#action2">Quienes Somos</Nav.Link>
-          <NavDropdown title="Catalogo" id="offcanvasNavbarDropdown">
+          <Nav.Link href="#action2">Catalogo</Nav.Link>
+          <NavDropdown title="Promociones" id="offcanvasNavbarDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
             {/* <NavDropdown.Divider /> */}
