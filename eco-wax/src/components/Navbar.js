@@ -1,7 +1,7 @@
 import react from "react";
 import {Container, Navbar, Offcanvas, NavDropdown,Form, FormControl, Button, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from 'react-dom-route'
+import { Link } from "react-router-dom";
 
 
 export const NavbarMain = () =>{
