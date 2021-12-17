@@ -1,6 +1,7 @@
 import react from "react";
 import {Container, Navbar, Offcanvas, NavDropdown,Form, FormControl, Button, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from 'react-dom-route'
 
 
 export const NavbarMain = () =>{
@@ -20,7 +21,9 @@ export const NavbarMain = () =>{
       <Offcanvas.Body>
         <Nav className="justify-content-end flex-grow-1 pe-3">
           <Nav.Link href="#action1">Eco Wax</Nav.Link>
+          <Link to="/catalogo">
           <Nav.Link href="#action2">Catalogo</Nav.Link>
+          </Link>
           <NavDropdown title="Promociones" id="offcanvasNavbarDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
