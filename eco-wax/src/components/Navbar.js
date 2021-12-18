@@ -8,7 +8,9 @@ export const NavbarMain = () =>{
     return (
         <Navbar bg="light" expand={false}>
   <Container fluid>
+    <Link to="/">
     <Navbar.Brand href="#">Eco Wax</Navbar.Brand>
+    </Link>
     <Navbar.Toggle aria-controls="offcanvasNavbar" />
     <Navbar.Offcanvas
       id="offcanvasNavbar"
@@ -20,7 +22,9 @@ export const NavbarMain = () =>{
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Nav className="justify-content-end flex-grow-1 pe-3">
+          <Link to="/">
           <Nav.Link href="#action1">Eco Wax</Nav.Link>
+          </Link>
           <Link to="/catalogo">
           <Nav.Link href="#action2">Catalogo</Nav.Link>
           </Link>
