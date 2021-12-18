@@ -2,6 +2,8 @@ import react from "react";
 import {Container, Navbar, Offcanvas, NavDropdown,Form, FormControl, Button, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
+import {FaShoppingCart, FaTruck} from 'react-icons/fa'
+import {SiCashapp} from 'react-icons/si'
 
 
 export const NavbarMain = () =>{
@@ -22,11 +24,17 @@ export const NavbarMain = () =>{
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Nav className="justify-content-end flex-grow-1 pe-3">
-          <Link to="/">
-          <Nav.Link href="#action1">Eco Wax</Nav.Link>
-          </Link>
           <Link to="/catalogo">
-          <Nav.Link href="#action2">Catalogo</Nav.Link>
+          <Nav.Link>Catalogo</Nav.Link>
+          </Link>
+          <Link to="/">
+          <Nav.Link >Metodos de Envios <FaTruck /> </Nav.Link>
+          </Link>
+          <Link to="/">
+          <Nav.Link >Metodos de Pagos <SiCashapp /> </Nav.Link>
+          </Link>
+          <Link to="/">
+          <Nav.Link >Tus Compras <FaShoppingCart/> </Nav.Link>
           </Link>
           <NavDropdown title="Promociones" id="offcanvasNavbarDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
