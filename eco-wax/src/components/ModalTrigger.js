@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import { ModalPromocion } from "./ModalPromocion";
 
 export const ModalTrigger =() =>{
     const [modalShow, setModalShow] = React.useState(false);
