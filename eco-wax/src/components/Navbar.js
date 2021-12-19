@@ -8,10 +8,10 @@ import {SiCashapp} from 'react-icons/si'
 
 export const NavbarMain = () =>{
     return (
-        <Navbar bg="light" expand={false}>
+        <Navbar id="navBarMain" style={{backgroundColor: "#282c34"}} expand={false}>
   <Container fluid>
     <Link to="/inicio">
-    <Navbar.Brand href="#">Eco Wax</Navbar.Brand>
+    <Navbar.Brand style={{color: "white", position: "relative", left: "50px", fontSize: "50px", fontFamily: ""}}>Eco Wax</Navbar.Brand>
     </Link>
     <Navbar.Toggle aria-controls="offcanvasNavbar" />
     <Navbar.Offcanvas
