@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Catalogo } from './pages/Catalogo'
-import { NavbarMain } from './components/Navbar'
+import { Inicio } from './pages/Inicio'
 
 
 function App() {
@@ -12,10 +12,9 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path='/' element={<Home />}>
-          </Route>
-          <Route extac path='/catalogo' element={<Catalogo />}>
-          </Route>
+          <Route path='/' element={<Inicio /> } />
+          <Route path='/inicio' element={<Home />} />
+          <Route extac path='/catalogo' element={<Catalogo />} />
           <Route>
             404 Page not found.
           </Route>

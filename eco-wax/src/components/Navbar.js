@@ -10,7 +10,7 @@ export const NavbarMain = () =>{
     return (
         <Navbar bg="light" expand={false}>
   <Container fluid>
-    <Link to="/">
+    <Link to="/inicio">
     <Navbar.Brand href="#">Eco Wax</Navbar.Brand>
     </Link>
     <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -27,13 +27,13 @@ export const NavbarMain = () =>{
           <Link to="/catalogo">
           <Nav.Link>Catalogo</Nav.Link>
           </Link>
-          <Link to="/">
+          <Link to="/inicio">
           <Nav.Link >Metodos de Envios <FaTruck /> </Nav.Link>
           </Link>
-          <Link to="/">
+          <Link to="/inicio">
           <Nav.Link >Metodos de Pagos <SiCashapp /> </Nav.Link>
           </Link>
-          <Link to="/">
+          <Link to="/inicio">
           <Nav.Link >Tus Compras <FaShoppingCart/> </Nav.Link>
           </Link>
           <NavDropdown title="Promociones" id="offcanvasNavbarDropdown">

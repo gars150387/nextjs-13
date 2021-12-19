@@ -8,7 +8,7 @@ export const ModalTrigger =() =>{
     return (
       <>
         <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
+         Haz click aca si quieres ver nuestros productos
         </Button>
   
         <ModalPromocion
@@ -18,4 +18,4 @@ export const ModalTrigger =() =>{
       </>
     );
 
-}
+} 

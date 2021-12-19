@@ -1,5 +1,6 @@
 import React from "react";
 import {Modal, Button} from 'react-bootstrap'
+import { Link } from "react-router-dom";
 
 export const ModalPromocion =(props) => {
     return (
@@ -11,19 +12,23 @@ export const ModalPromocion =(props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Quieres ver nuestras Promociones?
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
+          <h4>Queremos ofrecerte los mejores Paquetes!</h4>
           <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+          <br/>
+            Si quieres ver nuestras promociones, por favor haz click en el boton de "Vamos",
+            <br/>
+            caso contratio, solo debes hacer click en "No, Gracias!""
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+          <Button onClick={props.onHide}>No, Gracias!</Button>
+          <Link to='/inicio'>
+          <Button>Vamos</Button>
+          </Link>
         </Modal.Footer>
       </Modal>
     );
