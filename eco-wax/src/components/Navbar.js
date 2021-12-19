@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import {Container, Navbar, Offcanvas, NavDropdown,Form, FormControl, Button, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
@@ -11,9 +11,9 @@ export const NavbarMain = () =>{
         <Navbar id="navBarMain" style={{backgroundColor: "#282c34"}} expand={false}>
   <Container fluid>
     <Link to="/inicio">
-    <Navbar.Brand style={{color: "white", position: "relative", left: "50px", fontSize: "50px", fontFamily: ""}}>Eco Wax</Navbar.Brand>
+    <Navbar.Brand style={{color: "white", position: "relative", left: "340px", fontSize: "60px", fontFamily: "comics san"}}>Eco Wax</Navbar.Brand>
     </Link>
-    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+    <Navbar.Toggle style={{backgroundColor: "white", fontSize: "25px", position: "relative", right: "20px"}} aria-controls="offcanvasNavbar" />
     <Navbar.Offcanvas
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
@@ -23,9 +23,9 @@ export const NavbarMain = () =>{
         {/* <Offcanvas.Title id="offcanvasNavbarLabel">Eco Wax</Offcanvas.Title> */}
       </Offcanvas.Header>
       <Offcanvas.Body>
-        <Nav className="justify-content-end flex-grow-1 pe-3">
+        <Nav id="navbarOptions" className="justify-content-end flex-grow-1 pe-3">
           <Link to="/catalogo">
-          <Nav.Link>Catalogo</Nav.Link>
+          <Nav.Link href="/catalogo">Catalogo</Nav.Link>
           </Link>
           <Link to="/inicio">
           <Nav.Link >Metodos de Envios <FaTruck /> </Nav.Link>
