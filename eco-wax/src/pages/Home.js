@@ -1,18 +1,22 @@
 import React from 'react'
-import { CarouselMain } from '../components/Carousel'
-import { CardContent } from '../components/Content'
 import { NavbarMain } from '../components/Navbar'
 import { Footer} from '../components/Footer'
-import Video1 from '../components/Video1'
+// import {CarouselMain} from '../components/Carousel'
+import VideoOnePlayed from '../components/VideoOne'
+import VideoTwoPlayed from '../components/VideoTwo'
+import { Producto } from '../components/Producto'
+import { Caracteristicas } from '../components/ListaDeCaracteristicas'
 
 
 export const Home = () => {
     return (
         <>
         <NavbarMain />
-        <CarouselMain/>
-        <Video1 />
-        <CardContent/>
+        <Producto />
+        {/* <Caracteristicas/> */}
+        <VideoOnePlayed />
+        <VideoTwoPlayed />
+        {/* <CarouselMain/> */}
         <Footer />
         </>
     )
