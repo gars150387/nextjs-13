@@ -53,3 +53,16 @@
 #navBarMain{
   height: 90px;
 }
+#buttonTrigger{
+  height: 100px;
+  width: 600px;
+  position: absolute;
+  left: 750px;
+  top: 600px;
+  /* margin: auto; */
+  z-index: 1;
+}
+#textTrigger{
+  font-size: 25px;
+  margin: auto
+}
