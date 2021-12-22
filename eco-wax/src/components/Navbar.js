@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import {FaShoppingCart, FaTruck} from 'react-icons/fa'
 import {SiCashapp} from 'react-icons/si'
+import {MdOutlineMarkEmailRead} from 'react-icons/md'
 
 
 export const NavbarMain = () =>{
@@ -35,6 +36,8 @@ export const NavbarMain = () =>{
           </Link>
           <Link to="/inicio">
           <Nav.Link >Tus Compras <FaShoppingCart/> </Nav.Link>
+          </Link><Link to="/inicio">
+          <Nav.Link >Contactanos <MdOutlineMarkEmailRead/> </Nav.Link>
           </Link>
           <NavDropdown title="Promociones" id="offcanvasNavbarDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>

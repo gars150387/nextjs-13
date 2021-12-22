@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
-import { MdOutlineHighQuality, MdAttachMoney } from 'react-icons/md'
+import { MdOutlineHighQuality, MdAttachMoney, MdOutlineMarkEmailRead } from 'react-icons/md'
 import { FaShippingFast, FaTruck, FaShoppingCart } from 'react-icons/fa'
 import { SiCashapp } from 'react-icons/si'
 import {Link} from 'react-router-dom'
@@ -28,6 +28,8 @@ export const Footer = () => {
           <Link to="/inicio">
           <p >Tus Compras <FaShoppingCart/> </p>
           </Link>
+          <Link to='/contact'>
+          <p>Contactanos <MdOutlineMarkEmailRead/></p></Link>
             </div>
             <div className='text-start' style={{position: "relative", bottom: "-100px"}}>
                 <span>Copyright <AiOutlineCopyrightCircle /> 2021 Eco Wax | Designed by G.A.R.S</span>

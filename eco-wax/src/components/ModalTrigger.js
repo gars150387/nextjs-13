@@ -7,8 +7,8 @@ export const ModalTrigger =() =>{
   
     return (
       <>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
-         Haz click aca si quieres ver nuestros productos
+        <Button id="buttonTrigger" variant="primary" onClick={() => setModalShow(true)}>
+         <p id="textTrigger">Haz click aca si quieres ver nuestros productos</p>
         </Button>
   
         <ModalPromocion

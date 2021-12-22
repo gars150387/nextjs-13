@@ -1,7 +1,7 @@
 export const ListaDeProductos= [{
     id: "001",
     nombre: "Lavado Ecologico",
-    caracteristica: ['Ahorra agua', ' Rinde de 6 a 7 lavadas', ' Porcelaniza la pintura', ' Limpia y desempana cristales' , ' Funciona en cualquier tipo de pintura'],
+    caracteristica: ['Ahorra agua', <br/>,' Rinde de 6 a 7 lavadas', <br/>,' Porcelaniza la pintura', <br/>, ' Limpia y desempana cristales' , <br/>, ' Funciona en cualquier tipo de pintura'],
     presentacion: '500 ml',
     precio: "$38.900",
     obsequio: "2 Microfibra",
@@ -9,7 +9,7 @@ export const ListaDeProductos= [{
 },{
     id: "002",
     nombre: "Lavado Ecologico - Motos",
-    caracteristica: ['Ahorra agua', ' Rinde de 6 a 7 lavadas', ' Porcelaniza la pintura', ' Desempanante' , ' Recupera la farola', ' Funciona en pintura mata'],
+    caracteristica: ['Ahorra agua', <br/>, ' Rinde de 6 a 7 lavadas', ' Porcelaniza la pintura', ' Desempanante' , ' Recupera la farola', ' Funciona en pintura mata'],
     presentacion: '250 ml',
     precio: "$24.900",
     obsequio: "1 Microfibra",
@@ -17,7 +17,7 @@ export const ListaDeProductos= [{
 },{
     id: "003",
     nombre: "Restaurador de Partes Negras",
-    caracteristica: ['Restaura el color original de las piezas de tu carra y moto', 'Brillo y proteccion', 'No deja sensacion grasosa', 'Funciona para partes internas y externas' , 'Hidrata cojineria de cuero', 'Fragancia de coco'],
+    caracteristica: ['Restaura el color original de las piezas de tu carra y moto', <br/>, 'Brillo y proteccion', 'No deja sensacion grasosa', 'Funciona para partes internas y externas' , 'Hidrata cojineria de cuero', 'Fragancia de coco'],
     presentacion: '300 ml',
     precio: "$22.900",
     obsequio: "Una esponjilla",
