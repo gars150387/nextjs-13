@@ -1,8 +1,14 @@
 import React from 'react'
-import {CatalogoPDF} from '../components/CatalogoPDF'
+import { CatalogoPDF } from '../components/CatalogoPDF'
+import { Footer } from '../components/Footer'
+import { NavbarMain } from '../components/Navbar'
 
-export const Catalogo =()=>{
-    return(
-        <CatalogoPDF />
+export const Catalogo = () => {
+    return (
+        <>
+            <NavbarMain />
+            <CatalogoPDF />
+            <Footer/>
+        </>
     )
 }
