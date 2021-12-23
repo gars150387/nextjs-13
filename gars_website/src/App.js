@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBarMain sticky="top"/>
+        <NavBarMain className="navbar sticky-top"/>
       </div>
       <Switch>
         <Route exact path="/home" >
@@ -35,10 +35,6 @@ function App() {
         <Route>
           404 Page not found.
         </Route>
-        {/* <Route exact path="/aboutMe" element={AboutMe} />
-        <Route exact path="/certifications" element={Certifications} />
-        <Route exact path="/contactMe" element={ContactMe} />
-        <Route exact path="/resume" element={Resume} /> */}
       </Switch>
       <Footer />
 
