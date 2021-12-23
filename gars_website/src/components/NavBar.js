@@ -23,7 +23,7 @@ export const NavBarMain = () => {
             <Link to="/contact">
               <Nav.Link id="navbarOption" eventKey={2} href="/contact">Contact</Nav.Link>
             </Link>
-            <NavDropdown title="Projects" style={{fontSize: "28px"}} id="navbarOption" id="collasible-nav-dropdown">
+            <NavDropdown title="Projects" style={{fontSize: "28px"}} id="collasible-nav-dropdown">
               <NavDropdown.Item href="https://github.com/gars150387/Contact_list_Flux_API_BasedOnArticle">Contact_list_Flux_API_BasedOnArticle</NavDropdown.Item>
               <NavDropdown.Item href="https://github.com/WoodlyB/Gustavo-and-Woodly-project">Final Project</NavDropdown.Item>
               <NavDropdown.Item href="https://github.com/gars150387/todo-list-in-landing-page-react-flux">To Do List</NavDropdown.Item>
