@@ -14,6 +14,7 @@ import "../images/FullStackWebDeveloperCertificationMiamiDadeCollege.JPG";
 import "../images/ReactDesignPatterns.JPG";
 import "../images/ReactCreatingAndHostingAFullStackSite.JPG";
 import "../images/AcceleratedJavaScriptTrainingUdemy.jpg"
+import "../images/IntroductionToWebAPIs.png"
 
 export const CertificationShow = () => {
     return (
@@ -33,6 +34,7 @@ export const CertificationShow = () => {
             <img variant="top" id="certificationsImage" className="d-block mt-2 mb-2 w-75 h-75" src={require("../images/ReactBuildingAnInterface.jpg").default} alt="React Building an interface"/>
             <img variant="top" id="certificationsImage" className="d-block mt-2 mb-2 w-75 h-75" src={require("../images/DevelopingACriticalThinkingMindset.jpg").default} alt="Developing a critical mindset"/>
             <img variant="top" id="certificationsImage" className="d-block mt-2 mb-2 w-75 h-75" src={require("../images/ReactCreatingAndHostingAFullStackSite.JPG").default} alt="React creating and hosting a full stack site"/>
+            <img variant="top" id="certificationsImage" className="d-block mt-2 mb-2 w-75 h-75" src={require("../images/IntroductionToWebAPIs.png").default} alt="Introduction to Web API"/>
         </>
     );
 }
