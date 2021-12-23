@@ -71,6 +71,7 @@
 #navbar{
   position: sticky;
   top: 0%;
+  height: 80px;
 }
 .pdf-container{
   margin: auto;
@@ -83,7 +84,10 @@
   height: 250px;
   width: 250px;
 }
-
-/* .btn{
-  left: 200px;
-} */
+#navbarTitle{
+  font-size: 28px;
+  font-family:'Trebuchet MS';
+}
+#navbarOption{
+  font-size: 28px;
+}
