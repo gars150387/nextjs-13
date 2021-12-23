@@ -1,8 +1,16 @@
-let request = new XMLHttpRequest();
+import React from 'react'
 
-request.open('GET', 'api.giphy.com/v1/gifs/random' )
+export const Fetch = () =>{
+    let request = new XMLHttpRequest();
 
-request.onload = function(){
-    let response = request.response;
+    request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key=GSwMtGikN5iHMT9dDAZShDDFr9O1Lv0G' )
+    
+    request.onload = function(){
+        let response = request.response;
+        let parseData = JSON.parse(response);
+        console.log(parseData)
+    }
+    
+    request.send();
     
 }
