@@ -24,6 +24,9 @@ export const Search = () =>{
             <input placeholder="City name" type='text' id='city' onChange={element => setUpdate(element. target.value)}></input>
             {}
             <button type="button" onClick={function(){
+                if (searchCity.length === 0){
+                    alert("Please enter a valid city name")
+                }
                 console.log("clicked")
             }
             }>Show Weather</button>
