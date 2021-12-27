@@ -14,7 +14,7 @@ export const Search = () =>{
         if (http.readyState === XMLHttpRequest.DONE && http.status === 200){
 
         }else if (http.readyState === XMLHttpRequest.DONE){
-            // alert("Somethign went wrong!")
+            alert("Somethign went wrong!")
         }
     }
 
