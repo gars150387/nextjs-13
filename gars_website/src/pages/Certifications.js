@@ -1,8 +1,7 @@
 import React from "react";
-import { CertificationShow } from "../components/CertificationShow";
+import {CertificationShow} from '../components/CertificationShow'
 
-
-export const Certifications =()=>{
+export const Certifications =(props)=>{
     return (
         <CertificationShow />
     )
