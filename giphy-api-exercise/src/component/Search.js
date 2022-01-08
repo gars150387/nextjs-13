@@ -21,21 +21,27 @@ export const SearchWeather = () => {
             .then((response) => {
                 return response.json()
             })
-            .then(data => {
-                setData(
-                    JSON.stringify(setData),
-                    console.log('data', data),
-                    console.log('setData', setData)    
-                )
-            })
+            .then(setData)
     })
     return (
         <div className="main">
             <label>City Name</label>
             <input placeholder="City name" type='text' id='city' onChange={element => setUpdate(element.target.value)} />
             <button type="button" onClick={() => {
+                useEffect(() => {
+                    fetch(url, {
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        }
+                    })
+                        .then((response) => {
+                            return response.json()
+                        })
+                        .then(setData)
+                })
             }}>Show Weather</button>
-            
+
         </div>
     )
 }
