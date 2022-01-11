@@ -1,45 +1,37 @@
 import React, { useState, useEffect } from "react";
 
 export const SearchWeather = () => {
-    const [setUpdate] = useState('')
+    const [update, setUpdate] = useState('')
 
     const [data, setData] = useState([]);
+
     let cityName = setUpdate
 
+    let url = 'api.openweathermap.org/data/2.5/weather?q='+{cityName}+'&appid=750f844a271e6a0e4d5caf0107a40189';
 
-    let apiKey = '750f844a271e6a0e4d5caf0107a40189'
-
-    let url = 'api.openweathermap.org/data/2.5/weather?q=london&appid=' + { apiKey };
-
-    useEffect(() => {
+    useEffect((url) => {
         fetch(url, {
+            method: "GET",
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(url)
         })
-            .then((response) => {
+            .then((response)=> {
                 return response.json()
             })
-            .then(setData)
+            .then(setData =>{
+                JSON.stringify(setData)
+                console.log('data', setData)
+            })
+            
     })
     return (
         <div className="main">
             <label>City Name</label>
             <input placeholder="City name" type='text' id='city' onChange={element => setUpdate(element.target.value)} />
             <button type="button" onClick={() => {
-                useEffect(() => {
-                    fetch(url, {
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Accept': 'application/json'
-                        }
-                    })
-                        .then((response) => {
-                            return response.json()
-                        })
-                        .then(setData)
-                })
             }}>Show Weather</button>
 
         </div>
