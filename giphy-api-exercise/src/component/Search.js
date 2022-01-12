@@ -9,23 +9,16 @@ export const SearchWeather = () => {
 
     let url = 'api.openweathermap.org/data/2.5/weather?q='+{cityName}+'&appid=750f844a271e6a0e4d5caf0107a40189';
 
-    useEffect((url) => {
-        fetch(url, {
-            method: "GET",
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(url)
-        })
-            .then((response)=> {
+    useEffect(() => {
+        fetch(url)
+            .then((response) => {
                 return response.json()
+                console.log(response)
             })
-            .then(setData =>{
-                JSON.stringify(setData)
-                console.log('data', setData)
+            .then( response => setData => {
+                console.log('setData', setData)
             })
-            
+
     })
     return (
         <div className="main">
