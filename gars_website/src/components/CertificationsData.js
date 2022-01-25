@@ -119,4 +119,3 @@ export const CertificationsData = [
 		img: "ReactEssentialTraining"
 	}
 ];
-

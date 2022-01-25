@@ -1,7 +1,7 @@
 {
   "name": "gars_website",
   "version": "0.1.0",
-  "homepage": "htpps://gars.link/",
+  "homepage": "https://gars150387.github.io/gars_website/",
   "private": true,
   "dependencies": {
     "@react-pdf-viewer/core": "^2.11.0",

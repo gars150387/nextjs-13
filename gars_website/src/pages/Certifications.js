@@ -3,6 +3,6 @@ import {CertificationShow} from '../components/CertificationShow'
 
 export const Certifications =(props)=>{
     return (
-        <CertificationShow />
+        <CertificationShow key={props.id}/>
     )
 }
