@@ -1,34 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from 'react';
 
-export const SearchWeather = () => {
-    const [update, setUpdate] = useState('')
+export const SearchCity = () =>{
+    const [city, setCity] = useState('')
 
-    const [data, setData] = useState([]);
+    const apiKey= '750f844a271e6a0e4d5caf0107a40189';
 
-    let cityName = setUpdate
-
-    let url = 'api.openweathermap.org/data/2.5/weather?q='+{cityName}+'&appid=750f844a271e6a0e4d5caf0107a40189';
-
-    const Fetching =() =>{
-        useEffect(() => {
-            fetch(url)
-                .then((response) => {
-                    return response.json()
-                    console.log(response)
-                })
-                .then( response => setData => {
-                    console.log('setData', setData)
-                })
-    
-        })    
-    }
-
-    return (
-        <div className="main">
-            <label>City Name</label>
-            <input placeholder="City name" type='text' id='city' onChange={element => setUpdate(element.target.value)} />
-            <button type="button" onClick={() => Fetching() }>Show Weather</button>
-
-        </div>
-    )
-}
+    const response = fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${ city }&limit=1&appid=${ apiKey }`)
