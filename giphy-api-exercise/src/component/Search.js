@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CityFormat } from './CityFormat';
 
 export const SearchCity = () => {
     const [city, setCity] = useState([])
@@ -18,20 +19,13 @@ export const SearchCity = () => {
             }, [])
     }
 
-
     return (
         <div>
-            {/* {city.name && city.name.map(item => {
+            {city && city.map((element, index) =>{
                 return (
-                    <ul>
-                        <li key={item.lat}>
-                            <h1>{ item.name}</h1>
-                            <h4>{ item.state}</h4>
-                            <h4>{ item.country}</h4>
-                        </li>
-                    </ul>
+                    <CityFormat key={element.lat} index={index} element={element} />
                 )
-            })} */}
+            })}
             {console.log('city2', city)}
             <input className='mr-5' onChange={(element) => setCity(element.target.value)} />
             <button style={{ height: '40px' }} className='bg-secundary ml-5'
