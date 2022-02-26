@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export const SearchCity = () => {
     const [city, setCity] = useState([])
@@ -13,21 +13,25 @@ export const SearchCity = () => {
             .then(response => response.json())
             .then(data => {
                 console.log("data", data)
-                setCity({
-                    city: data
-                })
-                console.log(city)
+                setCity(data)
+                console.log('city fetched',city)
             }, [])
     }
 
 
     return (
         <div>
-            {city && city.map(item => {
-                return
-                <><li key={item.lat}>{item.name}</li></>
-                
-            })}
+            {/* {city.name && city.name.map(item => {
+                return (
+                    <ul>
+                        <li key={item.lat}>
+                            <h1>{ item.name}</h1>
+                            <h4>{ item.state}</h4>
+                            <h4>{ item.country}</h4>
+                        </li>
+                    </ul>
+                )
+            })} */}
             {console.log('city2', city)}
             <input className='mr-5' onChange={(element) => setCity(element.target.value)} />
             <button style={{ height: '40px' }} className='bg-secundary ml-5'
