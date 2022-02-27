@@ -1,16 +1,38 @@
 import React from 'react';
+import PropType from 'prop-types'
 
-export const PrimeraApp = ( {saludos} ) => {
+export const PrimeraApp = ( {saludos, subtitulo} ) => {
 
-    saludos="Hola Mundo"
+    saludos ="Hola Mundo";
+    // subtitulo = 'soy un subtitulo'
+
+    //another way to define a value by default is declaring in the props like this:
+    //
 
     return (
         <>
         <h1>{ saludos }</h1>
-        <p>Mi primera clase</p>
+        <p>{subtitulo}</p>
     </>
     )
 }
+
+PrimeraApp.protoType= {
+    saludos: PropType.string.isRequired
+}
+
+PrimeraApp.defaultProps = {
+    subtitulo: 'soy un subtitulo'
+}
+
+
+
+
+//this is the way to declare a value of a props by default
+// PrimeraApp.defaultProps = {
+//     subtitulo: 'soy un subtitulo'
+// }
+
 
 // export const PrimeraApp = ( {saludos} ) => {
 
