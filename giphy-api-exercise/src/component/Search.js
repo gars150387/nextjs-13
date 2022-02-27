@@ -21,11 +21,11 @@ export const SearchCity = () => {
 
     return (
         <div>
-            {city && city.map((element, index) =>{
+            {/* {city && city.map((element, index) =>{
                 return (
                     <CityFormat key={element.lat} index={index} element={element} />
                 )
-            })}
+            })} */}
             {console.log('city2', city)}
             <input className='mr-5' onChange={(element) => setCity(element.target.value)} />
             <button style={{ height: '40px' }} className='bg-secundary ml-5'
