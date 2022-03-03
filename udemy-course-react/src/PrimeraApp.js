@@ -17,7 +17,7 @@ export const PrimeraApp = ( {saludos, subtitulo} ) => {
     )
 }
 
-PrimeraApp.protoType= {
+PrimeraApp.propType= {
     saludos: PropType.string.isRequired
 }
 

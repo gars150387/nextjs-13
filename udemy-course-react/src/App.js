@@ -1,8 +1,13 @@
 import React from "react";
+import { CounterApp } from "./CounterApp";
 import { PrimeraApp } from "./PrimeraApp";
 
-export const App = () =>{
+export const App = () => {
     return (
-        <PrimeraApp />
+        <>
+            <PrimeraApp />
+            <CounterApp />
+
+        </>
     )
 }
