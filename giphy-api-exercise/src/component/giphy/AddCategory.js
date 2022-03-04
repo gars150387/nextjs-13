@@ -1,15 +1,34 @@
 import React, { useState } from "react";
+import { PropType} from 'prop-types'
 
-export const AddCategory = () =>{
+export const AddCategory = ({ setCategories }) =>{
 
-    const [value, setValue] = useState('')
+    const [inputValue, setInputValue] = useState('')
+
+    const handleInputValue = (e) =>{
+        setInputValue(e.target.value)
+    }
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+
+        if (inputValue.trim().length > 2){
+            setCategories( category => [...category, inputValue])
+        }
+
+        
+    }
 
     return (
-        <div>
+        <form onSubmit={ handleSubmit }>
             <h2>
                 Add category
             </h2>
-            <input value={ value } onChange={ (e) => {setValue(e.target.value)}} placeholder="Search" type={'text'} className="mb-4"></input>
-        </div>
+            <input onChange={ handleInputValue } type='text' className="mb-4"></input>
+        </form>
     )
+}
+
+AddCategory.propType={
+    setCategories: PropType.func.isRequired
 }
