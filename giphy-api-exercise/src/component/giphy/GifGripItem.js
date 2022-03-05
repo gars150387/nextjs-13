@@ -4,7 +4,7 @@ export const GifGripItem = ({ id, url, user, title}) => {
 
     return (
         <div key={id}>
-            <h3>{title}</h3>
+            <h3>Title: {title}</h3>
             <img src={url} alt={url} />
             <div>User: {user}</div>
         </div>

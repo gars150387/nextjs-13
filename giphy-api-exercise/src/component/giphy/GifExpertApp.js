@@ -1,34 +1,30 @@
 import { Button } from 'react-bootstrap';
 import React, { useState } from 'react';
+import { AddCategory } from './AddCategory';
+import { GifGrid } from './GifGrip';
 
-export const GifExportApp = () =>{
+export const GifExportApp = () => {
 
     // export const categories
 
-    const [ categories, setCategories] = useState([1,2,3,4,5,6])
+    const [categories, setCategories] = useState(['Gustavo'])
 
-    const handleApp =()=>{
-        setCategories([...categories, ((categories.length)+1)])
-    }
+    // const handleApp = () => {
+    //     setCategories([...categories, ((categories.length) + 1)])
+    // }
 
     return (
         <>
-        <h2>GifExportApp</h2>
-        <hr />
+            <h2>GifExportApp</h2>
+            <hr />
 
-        <button onClick={ handleApp } >Agregar</button>
-        {categories.map(category =>{
-            return (
-                <>
-                <ul>
-                    <li key={category}>
-                        {category}
-                    </li>
-                </ul>
-                </>
-            )
-        })}
+            <AddCategory setCategories={setCategories} />
+
+            {/* <button onClick={handleApp} >Agregar</button> */}
+            {categories.map(category =>
+                <GifGrid key={ category } category={category} />
+            )}
         </>
     )
-    
+
 }
