@@ -7,7 +7,7 @@ export const GifExportApp = () => {
 
     // export const categories
 
-    const [categories, setCategories] = useState(['Gustavo'])
+    const [categories, setCategories] = useState([])
 
     // const handleApp = () => {
     //     setCategories([...categories, ((categories.length) + 1)])
