@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    size: 30rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    padding: 60px;
+}
+
+#card{
+    /* width: 1800px;
+    height: 1800px; */
+    align-content: center;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+img{
+    width: 95%;
+    height: 50%;
+    margin: 18px;
+}
+.userTitle{
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: cursive;
+    /* background-color: gainsboro; */
+}
+
+h3{
+    color: black;
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: cursive;
 }
