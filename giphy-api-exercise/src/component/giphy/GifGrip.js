@@ -3,7 +3,8 @@ import { GifGripItem } from "./GifGripItem";
 
 export const GifGrid = ({ category }) => {
 
-    const [images, setImages] = useState([])
+    const [images, setImages] = useState([]);
+
     useEffect(() => {
         getGif()
     }, [])
@@ -32,14 +33,13 @@ export const GifGrid = ({ category }) => {
 
     return (
         <div>
-            {images.map(img => {
-                return (
-                    <GifGripItem
-                        key={img.id}
-                        img={ img }
-                    />
-                )
-            })}
+            {images.map(img =>
+                <GifGripItem
+                    key={img.id}
+                    { ...img }
+                />
+
+            )}
         </div>
     )
 }
