@@ -1,13 +1,14 @@
 import React from 'react';
 
+
 export const GifGripItem = ({ id, url, user, title}) => {
     
 //  console.log(props)
     return (
-        <div >
+        <div id='card' className='col-6 m-auto animate__animated animate__bounceInLeft'>
             <h3>Title: {title}</h3>
             <img src={url} alt={url} />
-            <div>User: {user}</div>
+            <div className='userTitle'>User: {user}</div>
         </div>
     )
 }
