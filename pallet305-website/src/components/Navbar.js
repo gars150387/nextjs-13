@@ -10,7 +10,7 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import { ImWhatsapp } from 'react-icons/im';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/navbar.css'
+import '../style/navbar.css'
 
 
 

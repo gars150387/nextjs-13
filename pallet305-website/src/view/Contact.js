@@ -1,9 +1,9 @@
 import React from "react";
-import { ContactForm } from "../component/ContactForm";
+import { ContactForm } from "../components/ContactForm";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import '../../styles/contact.css'
+import '../style/contact.css'
 
 export const Contact = () => {
     return (

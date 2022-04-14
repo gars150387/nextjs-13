@@ -6,10 +6,10 @@ import { ImWhatsapp } from 'react-icons/im'
 import { CgCopyright } from 'react-icons/cg'
 import { Navbar, Container, Row, Col } from "react-bootstrap";
 
-import { FaCcVisa, FaCcDiscover, FaCcMastercard, FaMoneyBillAlt } from 'react-icons/fa';
+import { FaCcVisa, FaCcDiscover, FaCcMastercard } from 'react-icons/fa';
 import { SiChase } from 'react-icons/si';
 
-import '../../styles/footer.css'
+import '../style/footer.css'
 
 export const Footer = () => (
 	<div className="footer">

@@ -2,7 +2,6 @@ import React from "react";
 import { Carousel, Row, Col, Container } from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import '../../styles/home.css';
 
 import '../img/FE859BF3-BE14-4E3F-A83C-5D4163248E01.jpg'
 import '../img/142B2076-642E-4451-8A54-F00F6822324A.jpg'

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-import "../../styles/design.css";
+import "../style/design.css";
 
 export const DesignTemplate = ({ img }) => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import { DesignTemplate } from '../component/DesignTemplate';
-import { DesignData } from '../component/DesignData';
+import { DesignTemplate } from '../components/DesignTemplate';
+import { DesignData } from '../components/DesignData';
 
 import { Container, Row, Col } from 'react-bootstrap';
 

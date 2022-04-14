@@ -1,8 +1,8 @@
 import React from "react";
-import { CarouselElement } from "../component/CarouselElement";
+import { CarouselElement } from "../components/CarouselElement";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/home.css';
+import '../style/home.css';
 
 export const Home = () => {
 	return (
