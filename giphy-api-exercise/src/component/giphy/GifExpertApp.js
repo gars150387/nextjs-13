@@ -1,4 +1,3 @@
-import { Button } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { AddCategory } from './AddCategory';
 import { GifGrid } from './GifGrip';
@@ -19,6 +18,10 @@ export const GifExportApp = () => {
             <hr />
 
             <AddCategory setCategories={setCategories} />
+
+            <h2>
+                { categories }
+            </h2>
 
             {/* <button onClick={handleApp} >Agregar</button> */}
             {categories.map(category =>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export const GifGripItem = ({ id, url, user, title}) => {
+export const GifGripItem = ({ url, user, title}) => {
     
 //  console.log(props)
     return (

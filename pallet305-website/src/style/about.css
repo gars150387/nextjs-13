@@ -1,0 +1,16 @@
+.text-about {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-top: 19px;
+    text-align: justify;
+}
+/* #imgAbout{
+    height: max-content;
+    width: min-content;
+} */
+
+#magazine {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 15px;
+}

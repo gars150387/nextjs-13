@@ -17,7 +17,7 @@ function App() {
         <NavBarMain className="navbar sticky-top"/>
       </div>
       <Switch>
-        <Route exact path="/home" >
+        <Route exact path="/" >
           <Home />
         </Route>
         <Route exact path="/aboutMe" >

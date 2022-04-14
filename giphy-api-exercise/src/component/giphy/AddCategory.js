@@ -1,31 +1,33 @@
 import React, { useState } from "react";
-import { PropType} from 'prop-types'
+import { Button } from 'react-bootstrap'
+// import { PropType} from 'prop-types'
 
-export const AddCategory = ({ setCategories }) =>{
+export const AddCategory = ({ setCategories }) => {
 
     const [inputValue, setInputValue] = useState('')
 
-    const handleInputValue = (e) =>{
+    const handleInputValue = (e) => {
         setInputValue(e.target.value)
     }
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (inputValue.trim().length > 2){
-            setCategories( category => [...category, inputValue])
+        if (inputValue.trim().length > 2) {
+            setCategories(category => [inputValue])
         }
 
-        
+
     }
 
     return (
-        <form onSubmit={ handleSubmit }>
-            <h2>
-                Add category
-            </h2>
-            <input onChange={ handleInputValue } type='text' className="mb-4"></input>
-        </form>
+        <div className="Add">
+            
+            <input onChange={ handleInputValue } type='text'></input>
+            <Button onClick={ handleSubmit } variant="Success" size="lg" active>
+                Search
+            </Button>{' '}
+        </div>
     )
 }
 
