@@ -16,11 +16,11 @@ export const RouteMain = () => {
 			<BrowserRouter>
 					<NavbarWebsite />
 					<Routes>
-						<Route exact path="/" component={ Home } />
-						<Route exact path="/about" component={ About } />
-						<Route exact path="/design" component={ Design } />
-						<Route exact path="/contact" component={ Contact } />
-						<Route component={ Error404 } />
+						<Route exact path="/" element={ <Home /> } />
+						<Route path="/about" element={ <About /> } />
+						<Route path="/design" element={ <Design /> } />
+						<Route path="/contact" element={ <Contact /> } />
+						<Route path="/*" element={ <Error404 /> } />
 					</Routes>
 					<Footer />
 			</BrowserRouter>
