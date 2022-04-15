@@ -7,7 +7,6 @@ import '../img/E2F7BDFE-FE72-48E0-B12F-441DEFEA0DC9.jpg'
 import '../img/IMG_7808.jpg'
 import '../img/61556755-B9B9-4DB0-8162-B38A736A693D.jpg'
 
-
 export const CarouselItem1 = () => {
 	return (
 		<div>
@@ -19,7 +18,7 @@ export const CarouselItem1 = () => {
 								<Row>
 									<img
 										className="d-block"
-										src={require("../img/E2F7BDFE-FE72-48E0-B12F-441DEFEA0DC9.jpg").default}
+										src={require("../img/E2F7BDFE-FE72-48E0-B12F-441DEFEA0DC9.jpg")}
 										alt="" />
 								</Row>
 							</Carousel.Item>
@@ -27,7 +26,7 @@ export const CarouselItem1 = () => {
 								<Row>
 									<img
 										className="d-block"
-										src={require("../img/IMG_7808.jpg").default}
+										src={require("../img/IMG_7808.jpg")}
 										alt="" />
 								</Row>
 							</Carousel.Item>
@@ -35,7 +34,7 @@ export const CarouselItem1 = () => {
 								<Row>
 									<img
 										className="d-block"
-										src={require("../img/61556755-B9B9-4DB0-8162-B38A736A693D.jpg").default}
+										src={require("../img/61556755-B9B9-4DB0-8162-B38A736A693D.jpg")}
 										alt="" />
 
 								</Row>

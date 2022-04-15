@@ -19,11 +19,11 @@ export const NavbarWebsite = () => {
         <div className="mb-2">
             <Container id="headerContainer" fluid>
                 <Navbar collapseOnSelect expand="lg" bg="" variant="">
-                    <Container>
+                    <Container fixed="top">
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Col  md={{ span: 8, offset: 4 }} className="justify-content-center">
                                 <Link to="/">
-                                    <img src='/white-logo-transparent-background.png'
+                                    <img src={require('../img/white-logo-transparent-background.png')}
                                         alt='logo'
                                         id='logo'
                                     />
@@ -52,9 +52,9 @@ export const NavbarWebsite = () => {
                             <Nav.Link eventKey={2} target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pallet_305/"><FaInstagram id='icons' /></Nav.Link>
                             <Nav.Link eventKey={2} target="_blank" rel="noopener noreferrer" href="https://wa.me/message/SXDE7GX6G4OUF1"><ImWhatsapp id='icons' /></Nav.Link>
                             <NavDropdown title="" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="./english">English</NavDropdown.Item>
+                                <NavDropdown.Item href="./en">English</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="./spanish">Spanish</NavDropdown.Item>
+                                <NavDropdown.Item href="./es">Spanish</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

@@ -7,6 +7,7 @@ import { CarouselItem4 } from './CarouselItem4'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/home.css';
+import 'animate.css'
 
 export const CarouselElement = () => {
 	return (

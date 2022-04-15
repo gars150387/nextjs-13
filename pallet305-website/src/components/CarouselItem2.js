@@ -19,7 +19,7 @@ export const CarouselItem2 = () => {
 								<Row>
 									<img
 										className="d-block"
-										src={require("../img/A9927117-9F9A-44C2-9BEF-35876E24C7DF.jpg").default}
+										src={require("../img/A9927117-9F9A-44C2-9BEF-35876E24C7DF.jpg")}
 										alt="" />
 
 								</Row>
@@ -28,7 +28,7 @@ export const CarouselItem2 = () => {
 								<Row>
 									<img
 										className="d-block"
-										src={require("../img/2B3A74AF-F7FF-41C5-B435-E3EB2FF30C85.jpg").default}
+										src={require("../img/2B3A74AF-F7FF-41C5-B435-E3EB2FF30C85.jpg")}
 										alt="" />
 								</Row>
 							</Carousel.Item>
@@ -36,7 +36,7 @@ export const CarouselItem2 = () => {
 								<Row>
 									<img
 										className="d-block"
-										src={require("../img/18A20FB2-818E-4B72-BE1E-BDECCC52134D.jpg").default}
+										src={require("../img/18A20FB2-818E-4B72-BE1E-BDECCC52134D.jpg")}
 										alt="" />
 								</Row>
 							</Carousel.Item>
