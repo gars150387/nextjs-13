@@ -1,4 +1,4 @@
-import React, { useReducer} from 'react';
+import React, { useReducer, useState } from 'react';
 import { AuthContext } from './auth/authContext';
 import { RouteMain } from './route/RouteMain';
 import { authReducer} from './auth/authReducer'
@@ -13,7 +13,8 @@ const init = () => {
 
 function App() {
 
-  const [state, dispatch] = useReducer(authReducer, {} , init )
+  const [choice, setchoice] = useState(init)
+  const [state, dispatch] = useReducer(authReducer, {} , init ) 
 
   return (
     <div className="App">

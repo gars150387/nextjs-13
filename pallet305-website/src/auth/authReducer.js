@@ -1,6 +1,7 @@
 import { types } from "../types/types";
 
-export const authReducer = (state = {}, action) => {
+export const authReducer = (state = { language: true }, action) => {
+
     switch (action.type) {
         case types.english:
             return {

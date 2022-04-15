@@ -18,6 +18,7 @@ import { authReducer } from "../auth/authReducer";
 export const NavbarEspanol = ({ state }) => {
 
     const { state } = authReducer();
+    console.log( state )
 
     return (
         <div className="mb-2">
