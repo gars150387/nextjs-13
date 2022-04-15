@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 import '../style/about.css';
 
-// import '../img/front.jpg'
-// import '../img/PHOTO-2022-03-24-15-34-13.jpg';
-// import '../img/PHOTO-2022-03-24-15-34-37.jpg'
+import '../img/37d5499f-af1e-46ca-a14a-892a230d5aa0.jpg'
+import '../img/PHOTO-2022-03-24-15-34-37.jpg'
+import '../img/PHOTO-2022-03-24-15-34-13.jpg'
 
 export const About = () => {
     return (
@@ -25,20 +25,20 @@ export const About = () => {
                         Our priority is the customer, we are proud to be able to provide the best service and quality with our products.
                     </h4>
                 </Col>
-                {/* <Col id='imgAbout'>
-                    <Card.Img variant="" src={require("../img/front.jpg").default} style={{ paddingTop: "22px" }} />
+                <Col id='imgAbout'>
+                    <Card.Img variant="" src={require("../img/37d5499f-af1e-46ca-a14a-892a230d5aa0.jpg")} style={{ paddingTop: "22px" }} />
                 </Col>
             </Row>
             <hr />
             <Row>
                 <Col >
-                    <img id='magazine' src={require("PHOTO-2022-03-24-15-34-37.jpg").default} alt='PHOTO-2022-03-24-15-34-37' />
+                    <Card.Img id='magazine' src={require('../img/PHOTO-2022-03-24-15-34-37.jpg')} alt='PHOTO-2022-03-24-15-34-37' />
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <img id='magazine' src={require("PHOTO-2022-03-24-15-34-13.jpg").default} alt='PHOTO-2022-03-24-15-34-13' />
-                </Col> */}
+                    <Card.Img id='magazine' src={require("../img/PHOTO-2022-03-24-15-34-13.jpg")} alt='PHOTO-2022-03-24-15-34-13' />
+                </Col>
             </Row>
         
         </Container>
