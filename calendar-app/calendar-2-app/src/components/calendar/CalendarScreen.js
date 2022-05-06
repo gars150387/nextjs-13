@@ -7,13 +7,14 @@ import moment from 'moment'
 import { messages } from '../helper/calendar-messages-es'
 import { Navbar } from '../ui/Navbar'
 import { CalendarEvent } from './CalendarEvent'
+import { CalendarModal } from './CalendarModal'
 
 
 
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import './calendarScreen.css'
 
-import 'moment/locale/es'  // this is the config to change the language in moment
+// import 'moment/locale/es'  // this is the config to change the language in moment
 
 moment.locale( 'es' )
 
@@ -77,6 +78,9 @@ export const CalendarScreen = () => {
                     event: CalendarEvent
                 }}
             />
+
+
+            <CalendarModal />
         </div>
     )
 }
