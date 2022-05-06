@@ -1,7 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Modal from 'react-modal';
 import DateTimePicker from 'react-datetime-picker';
 import moment from 'moment';
+import Swal from 'sweetalert2';
+import { invalid } from 'moment';
 
 
 const customStyles = {
@@ -18,42 +20,86 @@ const customStyles = {
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement('#root');
 
-const startDate = moment().minutes(0).second(0).add( 1, 'hours') //to set time from 3.45.52 to 4.00.00
+const now = moment();
+
+// const dateStart = moment().minutes(0).second(0).add( 1, 'hours') //to set time from 3.45.52 to 4.00.00
+
+const end = moment().minutes(0).second(0).add(1, 'hours');
 
 export const CalendarModal = () => {
 
+    const [formValue, setformValue] = useState({
+        title: 'Evento',
+        notes: '',
+        start: now.toDate(),
+        end: end
+    })
+
+    const { notes, title } = formValue;
+
+    const handleInputChange = ({ target }) => {
+
+        setformValue({
+            ...formValue,
+            [target.name]: target.value
+        })
+    }
+
     // const [modalBehave, setmodalBehave] = useState( true )  useState to manipulate modal behave
 
-    const closeModal = () => {
-        // setmodalBehave(false)
+    // const closeModal = () => {
+    //     setmodalBehave(false)
+    // }
+
+    const [startDate, setstartDate] = useState(now.toDate())
+
+    const handleStartDateChange = (e) => {
+        setstartDate(e);
+        setformValue({
+            ...formValue,
+            start: e
+        })
     }
-
-    const now = moment();
-
-
-    const [startDate, setstartDate] = useState( now.toDate()  )
-
-    console.log('now', now )
-
-    
-    const handleStartDateChange = (e) =>{
-        setstartDate(e)
-    }
-
-    const end = moment().minutes(0).second(0).add(1, 'hours');
-
 
     const [endDate, setEndDate] = useState(end.toDate())
 
-    const handleEndDateChange = (e) =>{
-        setEndDate(e)
+    const handleEndDateChange = (e) => {
+        setEndDate(e);
+        setformValue({
+            ...formValue,
+            endt: e
+        })
+    }
+
+    const [isValid, setisValid] = useState(true)
+
+    const handleSubmitForm = (e) => {
+        e.preventDefault();
+
+        console.log(formValue)
+
+        const momentStart = moment(startDate)
+        const momentEnd = moment(endDate)
+
+        if (momentStart.isSameOrAfter(momentEnd)) {
+            Swal.fire('Error', 'Fecha de finalizacion debe ser mayor a la fecha de inicio', 'error')
+        }
+
+        if (title.trim().length <= 2) {
+            setisValid(false)
+        } else {
+            setisValid(true);
+        }
+
+        // closeModal();
+
     }
 
     return (
         <div>
             <Modal
                 isOpen={true}    //modalBehave to add new state
-                onRequestClose={closeModal}
+                // onRequestClose={closeModal}
                 closeTimeoutMS={200}
                 style={customStyles}
                 className="modal"
@@ -66,19 +112,20 @@ export const CalendarModal = () => {
 
                     <div className="form-group">
                         <label>Fecha y hora inicio</label>
-                        <DateTimePicker 
-                        onChange={ handleStartDateChange } 
-                        value={startDate} 
-                        className="form-control"
+                        <DateTimePicker
+                            onChange={handleStartDateChange}
+                            value={startDate}
+                            className="form-control"
                         />
                     </div>
 
                     <div className="form-group">
                         <label>Fecha y hora fin</label>
-                        <DateTimePicker 
-                        onChange={ handleEndDateChange } 
-                        value={endDate} 
-                        className="form-control"
+                        <DateTimePicker
+                            onChange={handleEndDateChange}
+                            value={endDate}
+                            minDate={startDate}  //para validar que la fecha de minima en comparacion a la fecha de inicio
+                            className="form-control"
                         />
                     </div>
 
@@ -87,10 +134,12 @@ export const CalendarModal = () => {
                         <label>Titulo y notas</label>
                         <input
                             type="text"
-                            className="form-control"
+                            className={`form-control ${!isValid && 'is-invalid'}`}
                             placeholder="Título del evento"
                             name="title"
                             autoComplete="off"
+                            value={title}
+                            onChange={handleInputChange}
                         />
                         <small id="emailHelp" className="form-text text-muted">Una descripción corta</small>
                     </div>
@@ -102,6 +151,8 @@ export const CalendarModal = () => {
                             placeholder="Notas"
                             rows="5"
                             name="notes"
+                            value={notes}
+                            onChange={handleInputChange}
                         ></textarea>
                         <small id="emailHelp" className="form-text text-muted">Información adicional</small>
                     </div>
@@ -109,6 +160,7 @@ export const CalendarModal = () => {
                     <button
                         type="submit"
                         className="btn btn-outline-primary btn-block"
+                        onClick={handleSubmitForm}
                     >
                         <i className="far fa-save"></i>
                         <span> Guardar</span>
