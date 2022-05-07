@@ -3,7 +3,6 @@ import Modal from 'react-modal';
 import DateTimePicker from 'react-datetime-picker';
 import moment from 'moment';
 import Swal from 'sweetalert2';
-import { invalid } from 'moment';
 
 
 const customStyles = {
