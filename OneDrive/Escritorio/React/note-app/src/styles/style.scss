@@ -15,74 +15,104 @@ justify-content: space-between;
 align-items: center;
 border-radius: 15px;
 box-shadow: 0 0 5px 5px rgba($color: #8b8b8b, $alpha: 1.2);
-grid-auto-flow: row;
+grid-auto-flow: row dense;
+width: 90%;
+
+h2{
+    margin: auto;
+}
+
+form{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 75%;
+
+    input{
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        padding: 3%;
+        font-size: 15px;
+        border: none;
+        box-shadow: 0 0 2px 2px rgba($color: #8b8b8b, $alpha: 0.2);
+    }
+
+
+    textarea{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 3%;
+        height: 12vh;
+    }
+
+}
 
 label{
     margin: 5px 0;
-    padding: 2%;
-    width: 100%;
+    padding: 3%;
+    font-size: 25px;
+
+    select{
+        margin-left: 2px;
+        padding-left: 5px;
+    }
 }
 
     button{
         background-color: $buttonMainColorHover;
         transition: all .5s;
+        margin: auto;
+        height: 12vh;
+
 
         &:hover{
             background-color: $buttonMainColor;
             color: $mainBackgroundColor;
-            transform: scale(1.1);
+            border-radius: 15px;
+            transform: rotateY(360deg);
         }
     }
     
 }
 
-h2{
-    padding-left: 2%;
-    margin: 5%;
-}
-form{
-    display: block;
-    padding: 1%;
-    label{
-        margin-bottom: 5%;
-    }
-
-    input{
-        display: flex;
-        position: relative;
-        right: 0%;
-        font-size: 25px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    textarea{
-        padding-left: 5%
-    };
-}
 
 #post{
-    background-color: $mainBackgroundColor;
-    border-color: $mainTextColor;
-    border: 1px solid;
-    border-radius: 15px;
-    color: $mainTextColor;
+    background-color: #fff;
+    font-size: 30px;
     display: flex;
-    position: relative;
-    width: 15vw;
-    height: 15vh;
-    padding: 15px;
-
-    & :hover{
-        background-color: $mainTextColor;
-        width:max-content;
-    }
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 4px rgba($color: #d3cfcf, $alpha: 0.2);
+    width: 20vw;
+    max-width: 20vw;
 }
 
+.postCredit{ 
+    display: grid;
+    margin: auto;
+
+    span, i{
+        font-family: "Edos" sans-serif;
+
+        i{
+            display: flex;
+            justify-content: end;
+            font-size: 20px;
+            text-shadow: 0 -2px 2px 3px #212529;
+        }
+
+        span i{
+            overflow: hidden;
+            bottom: 0px;
+
+        }
+}}
 
 .postList{
-    display: flexbox;
-    flex-direction: row;
-    section{
-        display: flexbox;
-        flex-direction: row;
-    }
+    background-color: #212529;
 }
+
+
