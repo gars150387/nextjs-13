@@ -75,7 +75,7 @@ export const AddPostForm = () => {
 
                 <br />
                 <label htmlFor='postTitle'>
-                    Post content: 
+                    Post content:  
                 </label>
                 <textarea
                     type='content'

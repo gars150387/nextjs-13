@@ -9,30 +9,28 @@ body{
 }
 
 #addPost{
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 15px;
+box-shadow: 0 0 5px 5px rgba($color: #8b8b8b, $alpha: 1.2);
+grid-auto-flow: row;
 
-    background-color: $mainBackgroundColor;
-    border-color: $mainTextColor;
-    border: 1px solid;
-    border-radius: 15px;
-    color: $mainTextColor;
-    display: flex;
-    position: relative;
-    width: 45vw;
-    height: 30vh;
-    padding: 15px;
+label{
+    margin: 5px 0;
+    padding: 2%;
+    width: 100%;
+}
+
     button{
         background-color: $buttonMainColorHover;
-        display: flexbox;
-        position: absolute;
-        font-size: 20px;
-        right: 10%;
-        top: 10%;
-        color: $mainBackgroundColor;
+        transition: all .5s;
 
         &:hover{
             background-color: $buttonMainColor;
-            font-size: 25px;
             color: $mainBackgroundColor;
+            transform: scale(1.1);
         }
     }
     
