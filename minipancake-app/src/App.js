@@ -2,9 +2,10 @@ import './App.css';
 import { Footer } from './components/Footer';
 import { Gallery } from './components/Gallery';
 import { Header } from './components/Header';
-import { Ingridients } from './components/Ingridients';
+import { Ingredients } from './components/Ingredients';
 import { Navbar } from './components/Navbar';
 import { NavbarSocialMedia } from './components/NavbarSocialMedia';
+import { Advertisment } from './components/Advertisment';
 import './style/style.css'
 
 function App() {
@@ -20,10 +21,13 @@ function App() {
         <Header />
       </section>
       <section className='d'>
-        <Ingridients />
+        <Ingredients />
       </section>
       <section className='e'>
         <Gallery />
+      </section>
+      <section>
+        <Advertisment />
       </section>
       <section className='f'>
         <Footer />

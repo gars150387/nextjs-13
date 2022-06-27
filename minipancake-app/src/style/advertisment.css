@@ -1,0 +1,11 @@
+.advertisment-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(134, 81, 81);
+}
+
+.advertisment-container img{
+    width: 100%;
+    position: relative;
+    top: 2%;
+}
