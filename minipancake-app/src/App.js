@@ -11,25 +11,25 @@ import './style/style.css'
 function App() {
   return (
     <div className="App">
-      <section className='a'>
+      <section className='nav-main'>
         <Navbar />
       </section>
-      <section className='b'>
+      <section className='nav-social'>
         <NavbarSocialMedia />
       </section>
-      <section className='c'>
+      <section id='home' className='header-section'>
         <Header />
       </section>
-      <section className='d'>
+      <section id='ingredients' className='ingredients-section'>
         <Ingredients />
       </section>
-      <section className='e'>
+      <section id='gallery' className='gallery-section'>
         <Gallery />
       </section>
-      <section>
+      <section id='advertisment' className='advertisment-section'>
         <Advertisment />
       </section>
-      <section className='f'>
+      <section className='footer-section'>
         <Footer />
       </section>
     </div>
