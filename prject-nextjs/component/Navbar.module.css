@@ -1,0 +1,27 @@
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+}
+.header{
+    border: 1px solid #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+.li{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    text-decoration: none;
+}
