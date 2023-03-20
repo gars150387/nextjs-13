@@ -1,0 +1,13 @@
+.title{
+    text-decoration: none;
+    color:aqua
+}
+.paragraph{
+    color:blanchedalmond;
+}
+.click{
+    color: cornflowerblue;
+}
+.click:hover{
+    color: blueviolet;
+}

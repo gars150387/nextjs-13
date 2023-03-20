@@ -1,8 +1,13 @@
 import Link from "next/link";
 import LikeButton from "./LikeButton";
+import Styles from "./ListOfPosts.module.css"
 
 const fetchPosts = () => {
-  return fetch("https://jsonplaceholder.typicode.com/posts").then((response) =>
+  return fetch("https://jsonplaceholder.typicode.com/posts", {
+    next:{
+      revalidate: 60
+    }
+  }).then((response) =>
     response.json()
   );
 };
@@ -13,8 +18,8 @@ export async function ListOfPosts() {
     return (
       <Link href={`/posts/${post.id}`}>
         <article key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
+          <h2 className={Styles.title}>{post.title}</h2>
+          <p className={Styles.paragraph}>{post.body}</p>
           <LikeButton />
         </article>{" "}
       </Link>
